@@ -12,11 +12,12 @@
     grid-template-rows: 8rem 1fr 10rem; 
     font-family: 'Montserrat';
     font-weight: bold;
+    background: rgb(255, 255, 255);
 }
 .header-grid {
     display: grid;
 
-    background: rgb(147, 0, 0); 
+    // background: rgb(147, 0, 0); 
     padding: 0 4rem;
 }
 .header-section {
@@ -24,7 +25,15 @@
     display: grid;
     grid-template-columns: 5rem 1fr 5rem;
     height: 100%;
-    background: rgb(218, 88, 88);
+    // background: rgb(218, 88, 88);
+    .logo {
+        padding: 1.5rem; 
+        // margin-top: 0 auto;
+        width: 7rem;
+        height: 7rem;
+        color: #fff;
+        background: rgb(0, 0, 0);
+    }
     ul {
         // padding: 0 20vw;
         display: flex;
@@ -38,6 +47,10 @@
         color: #000;
         display: block;
         list-style-type: none;
+    }
+    a {
+        color: #000;
+        text-decoration: none;
     }
 }
 .content-grid{
@@ -53,13 +66,21 @@
     gap: 1rem;
     grid-template-columns: 1fr 1fr;
 }
+.content-one-line{
+
+}
 .content-header-text {
     display: grid;
     grid-template-rows: .5fr 1fr .5fr;
     background: rgb(255, 255, 255);
 }
 .content-header-img {
-background: #555;
+background: rgb(233, 233, 233);
+}
+.content-header-paragraph {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr ;
+    background: rgb(255, 255, 255);
 }
 .footer-grid {
 
@@ -69,4 +90,14 @@ background: #555;
 .large-text{
     font-size: 5vw;
     color: #000;
+}
+.med-text{
+    padding: 0 4rem;
+    font-size: 2vw;
+    color: rgb(48, 48, 48);
+}
+.med-text-center{
+    padding: 3rem 30rem;
+    font-size: 2vw;
+    color: rgb(48, 48, 48);
 }
